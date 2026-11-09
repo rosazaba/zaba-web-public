@@ -1,7 +1,5 @@
 # Zaba: web pública
 
-Web de fotografía de surf y buceo de Zaba, tal y como se publica en GitHub Pages.
+Web de fotografía de surf y buceo de Zaba, publicada en https://rosazaba.com con GitHub Pages.
 
-Este repositorio solo contiene la web ya generada. Las fotos están en baja resolución o con marca de agua; los originales no se publican.
-
-El contenido, las imágenes, los idiomas y el generador están en el repositorio de trabajo **rosazaba/zaba-web**. No edites nada aquí a mano: cualquier cambio se hace allí y se vuelve a publicar.
+Solo contiene la web generada, con fotos en baja resolución o con marca de agua. Los cambios se hacen en **rosazaba/zaba-web**, nunca aquí a mano.
