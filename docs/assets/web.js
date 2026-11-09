@@ -3,6 +3,19 @@
   document.documentElement.classList.add("js");
   var body = document.body;
 
+  /* Páginas ocultas: con ?ver=<clave> (comprobada en base.html), la clave pasa a todos los enlaces internos */
+  var ver = document.documentElement.getAttribute("data-ver");
+  if (ver) {
+    document.querySelectorAll("a[href]").forEach(function (a) {
+      var h = a.getAttribute("href");
+      if (/^(#|[a-z][a-z0-9+.-]*:|\/\/)/i.test(h)) return;   // anclas y enlaces externos (https:, mailto:, tel:…)
+      var u = new URL(h, location.href);
+      if (u.origin !== location.origin) return;
+      u.searchParams.set("ver", ver);
+      a.setAttribute("href", u.href);
+    });
+  }
+
   /* Menú móvil */
   var boton = document.querySelector("[data-hamburguesa]");
   if (boton) {
