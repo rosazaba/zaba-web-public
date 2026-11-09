@@ -9,4 +9,4 @@ Escaparate de la web de Zaba (fotografía de surf y buceo). GitHub Pages publica
 - En la raíz solo van `CLAUDE.md` y `README.md`.
 - **`docs/CNAME` tiene que existir**; sin él se pierde el dominio. Lo genera el build (`publicar_dominio: true` en `textos/general.yml` de `zaba-web`).
 - Claude hace commit y push; la usuaria no usa git.
-- La documentación describe cómo es el repo y qué pasos seguir, sin contar lo que había antes ni qué ha cambiado: eso queda en el historial de git.
+- Documentación: reglas cortas, en presente, sin historia ni datos que cambian (IPs, DNS…), y siempre ciertas.
